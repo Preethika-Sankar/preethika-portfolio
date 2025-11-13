@@ -63,12 +63,24 @@ contribute to impactful tech projects .</p>
     </div>
   </div>
 </section>
-<section id="skills">
+<section id="skills" class="section">
   <h2>Skills</h2>
-  <ul>
-    <li>Java, HTML, CSS, SQL</li>
-    <li>Git, GitHub, Figma</li>
-  </ul>
+  <div class="skill-bar">
+    <span>HTML</span>
+    <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+  </div>
+  <div class="skill-bar">
+    <span>CSS</span>
+    <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+  </div>
+  <div class="skill-bar">
+    <span>Java</span>
+    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+  </div>
+  <div class="skill-bar">
+    <span>Git & GitHub</span>
+    <div class="bar"><div class="fill" style="width: 75%;"></div></div>
+  </div>
 </section>
 
 <section id="resume">
@@ -76,8 +88,13 @@ contribute to impactful tech projects .</p>
   <a href="assets/resume.pdf" target="_blank" download class="resume-button">Download Resume</a>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:preethikasankar2005@gmail.com">preethikasankar2005@gmail.com</a></p>
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
