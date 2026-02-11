@@ -58,9 +58,10 @@ section {
 }
 
 /* Projects section */
-#projects {
+/* Projects section grid */
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -107,7 +108,6 @@ section {
 .project-card strong {
   color: #333;
 }
-
 /* Skills section */
 #skills ul {
   list-style-type: none;
