@@ -107,27 +107,45 @@ section {
 /* Skills section */
 #skills {
   text-align: center;
+  margin-top: 50px;
 }
 
-#skills ul {
-  list-style: none;
-  padding: 0;
+#skills h2 {
+  margin-bottom: 30px;
+  color: #6200ea;
+}
+
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-#skills li {
-  background-color: #f3f3f3;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.skill-category {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.skill-category h3 {
+  color: #6200ea;
+  margin-bottom: 10px;
+}
+
+.skill-category p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
 /* Resume section */
 #resume a {
   display: inline-block;
