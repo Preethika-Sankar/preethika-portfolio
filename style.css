@@ -3,13 +3,13 @@ body {
   font-family: "Poppins", sans-serif;
   background: #0A0A0A;
   color: #E0E0E0;
-  scroll-behavior: smooth; /* smooth scroll on anchor links */
+  scroll-behavior: smooth;
 }
 
 header {
   background: #111;
   padding: 1rem;
-  text-align: center; /* centers name + navbar */
+  text-align: center;
 }
 
 header h1 {
@@ -32,8 +32,15 @@ nav a:hover {
   color: #00AEEF;
 }
 
+/* Active navbar highlight */
+nav a.active {
+  color: #00AEEF;
+  border-bottom: 2px solid #00AEEF;
+  text-shadow: 0 0 8px #00AEEF;
+}
+
 section {
-  min-height: 100vh; /* each section fills screen */
+  min-height: 100vh;
   padding: 4rem;
   text-align: center;
   opacity: 0;
@@ -56,11 +63,31 @@ h2 {
   padding: 1rem;
   margin: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .project-card:hover, .skill-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #00AEEF;
+}
+
+/* Hover reveal overlay for projects */
+.project-card::after {
+  content: "Click to view details";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 174, 239, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  transition: bottom 0.4s ease;
+}
+
+.project-card:hover::after {
+  bottom: 0;
 }
 
 .profile-pic {
@@ -70,7 +97,18 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Hero animation */
+/* Hero section background gradient */
+#home {
+  background: linear-gradient(135deg, #0A0A0A, #111, #0A0A0A);
+  animation: gradientShift 8s infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% { background: linear-gradient(135deg, #0A0A0A, #111); }
+  100% { background: linear-gradient(135deg, #111, #0A0A0A); }
+}
+
+/* Hero text animation */
 .hero-text {
   font-size: 3rem;
   color: #00AEEF;
