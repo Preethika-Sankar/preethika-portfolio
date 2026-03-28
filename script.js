@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("nav a");
   const sections = document.querySelectorAll("section");
 
-  links.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href").substring(1);
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-      sections.forEach(sec => sec.classList.remove("active"));
-      document.getElementById(targetId).classList.add("active");
-    });
+  sections.forEach(section => {
+    observer.observe(section);
   });
 });

@@ -3,16 +3,22 @@ body {
   font-family: "Poppins", sans-serif;
   background: #0A0A0A;
   color: #E0E0E0;
+  scroll-behavior: smooth; /* enables smooth scrolling */
 }
 
 header {
   background: #111;
   padding: 1rem;
-  text-align: center;
+  text-align: center; /* centers everything */
 }
 
 header h1 {
   color: #00AEEF;
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
@@ -27,16 +33,16 @@ nav a:hover {
 }
 
 section {
-  display: none;
   padding: 4rem;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-section.active {
-  display: block;
+section.visible {
   opacity: 1;
+  transform: translateY(0);
 }
 
 h2 {
