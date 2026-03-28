@@ -5,119 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Preethika's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>Preethika S A</h1>
     <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Crafting digital experiences with clarity and impact.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="assets/profile.jpg" alt="Preethika Sankar" class="profile-pic">
+    <p>
+      I'm Preethika Sankar, a UI/UX enthusiast and final-year Computer Science student
+      passionate about building user-centric solutions. I thrive on problem solving,
+      love learning new technologies, and am always open to feedback to improve my work.
+      My goal is to create intuitive digital experiences that make a real impact.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>Full Stack</h3><p>Java, HTML, CSS</p></div>
+      <div class="skill-card"><h3>Version Control</h3><p>Git, GitHub</p></div>
+      <div class="skill-card"><h3>UI/UX</h3><p>Figma, Canva, Wireframing, Prototyping</p></div>
+      <div class="skill-card"><h3>Frameworks</h3><p>React, Node.js</p></div>
+      <div class="skill-card"><h3>AI Tools</h3><p>ChatGPT, Perplexity</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio showcasing my skills and projects.</p>
+        <a href="https://preethika-sankar.github.io/preethika-portfolio/" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Job Board Application</h3>
+        <p>Full-stack job board with JWT authentication and dashboards.</p>
+        <a href="https://job-board-sepia-two.vercel.app/" target="_blank">Live Demo</a>
+        <p><strong>Tech Used:</strong> Vercel, React, Node.js, Express, PostgreSQL, JWT, CSS</p>
+      </div>
+      <div class="project-card">
+        <h3>Student Info System</h3>
+        <p>Manage student records with backend integration.</p>
+        <a href="https://student-info-system-tw2l.onrender.com/students" target="_blank">Live Demo</a>
+        <p><strong>Tech Used:</strong> Node.js, Express, SQL, EJS, CSS, Java</p>
+      </div>
+      <div class="project-card">
+        <h3>Exam Seating Arrangement</h3>
+        <p>Frontend app to generate seating arrangements dynamically.</p>
+        <a href="https://preethika-sankar.github.io/seating-frontend/" target="_blank">Live Demo</a>
+        <p><strong>Tech Used:</strong> React, CSS, JavaScript, HTML, Java, SQL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <a href="assets/resume.pdf" target="_blank">View Resume</a>
+    <a href="assets/resume.pdf" download>Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: preethikasankar2005@gmail.com</p>
+    <p>Mobile: +91-9025567072</p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/preethika-s-a-a64405366/" target="_blank">
+        Preethika Sankar
+      </a>
+    </p>
+  </section>
 </body>
 </html>
-<section id="resume">
-  <h2>My Resume</h2>
-  <a href="assets/resume.pdf" target="_blank">View Resume</a>
-  <a href="assets/resume.pdf" download>Download Resume</a>
-</section>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<section id="about">
-  <h2>About Me</h2>
-  <img src="assets/profile.jpg" alt="Preethika Sankar" class="profile-pic">
-  <p>I'm Preethika Sankar, a UI/UX enthusiast and final-year Computer Science student
-     passionate about building user-centric solutions. I thrive on problem solving, love learning new technologies,
-    and am always open to feedback to improve my work. My goal is to create intuitive digital experiences that make a real impact.
-.</p>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio showcasing my skills and projects.</p>
-      <a href="https://preethika-sankar.github.io/preethika-portfolio/" target="_blank">View Project</a>
-      <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Job Board Application</h3>
-      <p>A full-stack job board application with role-based dashboards, JWT authentication, and real-time status workflows.</p>
-      <a href="https://job-board-sepia-two.vercel.app/" target="_blank">Live Demo</a>
-      <p><strong>Tech Used:</strong> Vercel, React, Node.js, Express, PostgreSQL, JWT, CSS</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Student Info System</h3>
-      <p>A web application to manage student records with backend integration.</p>
-      <a href="https://student-info-system-tw2l.onrender.com/students" target="_blank">Live Demo</a>
-      <p><strong>Tech Used:</strong> Node.js, Express, SQL, EJS, CSS, Java</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Exam Seating Arrangement</h3>
-      <p>A frontend app to generate and display exam seating arrangements dynamically.</p>
-      <a href="https://preethika-sankar.github.io/seating-frontend/" target="_blank">Live Demo</a>
-      <p><strong>Tech Used:</strong> React, CSS, JavaScript, HTML, Java, SQL</p>
-    </div>
-
-  </div>
-</section>
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <h3>Full Stack</h3>
-      <p>Java, HTML, CSS</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Version Control</h3>
-      <p>Git, GitHub</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>UI/UX</h3>
-      <p>Figma, Canva, Tinkercad</p>
-      <p>Wireframing, Prototyping, User Research, Design Thinking</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>AI Tools</h3>
-      <p>ChatGPT, Perplexity</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Frameworks</h3>
-      <p>React, Node.js</p>
-    </div>
-
-  </div>
-</section>
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: preethikasankar2005@gmail.com</p>
-  <p>Mobile: +91-9025567072</p>
-  <p>
-    LinkedIn: 
-    <a href="https://www.linkedin.com/in/preethika-s-a-a64405366/" target="_blank">
-      Preethika Sankar
-    </a>
-  </p>
-</section>
