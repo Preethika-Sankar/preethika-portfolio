@@ -3,13 +3,13 @@ body {
   font-family: "Poppins", sans-serif;
   background: #0A0A0A;
   color: #E0E0E0;
-  scroll-behavior: smooth; /* enables smooth scrolling */
+  scroll-behavior: smooth; /* smooth scroll on anchor links */
 }
 
 header {
   background: #111;
   padding: 1rem;
-  text-align: center; /* centers everything */
+  text-align: center; /* centers name + navbar */
 }
 
 header h1 {
@@ -33,6 +33,7 @@ nav a:hover {
 }
 
 section {
+  min-height: 100vh; /* each section fills screen */
   padding: 4rem;
   text-align: center;
   opacity: 0;
@@ -67,4 +68,28 @@ h2 {
   border-radius: 50%;
   border: 2px solid #00AEEF;
   margin-bottom: 1rem;
+}
+
+/* Hero animation */
+.hero-text {
+  font-size: 3rem;
+  color: #00AEEF;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 2s forwards;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  color: #E0E0E0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 2s forwards 0.5s;
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

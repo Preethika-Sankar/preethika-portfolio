@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section");
 
+  // Intersection Observer for fade-in effect
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
