@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -6,6 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header & Navbar */
 header {
   background: #111;
   padding: 1rem;
@@ -38,23 +40,18 @@ nav a.active {
   text-shadow: 0 0 8px #00AEEF;
 }
 
+/* Sections */
 section {
   min-height: 100vh;
   padding: 4rem;
   text-align: center;
-  opacity: 0; /* hidden initially */
+  opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Home is visible right away */
+section.visible,
 #home {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Any section marked visible by JS */
-section.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -63,45 +60,7 @@ h2 {
   color: #00AEEF;
 }
 
-.project-card, .skill-card {
-  background: #111;
-  border: 1px solid #00AEEF;
-  padding: 1rem;
-  margin: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card:hover, .skill-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00AEEF;
-}
-
-.project-card::after {
-  content: "Click to view details";
-  position: absolute;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 174, 239, 0.8);
-  color: #fff;
-  padding: 0.5rem;
-  text-align: center;
-  transition: bottom 0.4s ease;
-}
-
-.project-card:hover::after {
-  bottom: 0;
-}
-
-.profile-pic {
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid #00AEEF;
-  margin-bottom: 1rem;
-}
-
+/* Hero Section */
 #home {
   background: linear-gradient(135deg, #0A0A0A, #111, #0A0A0A);
   animation: gradientShift 8s infinite alternate;
@@ -133,4 +92,83 @@ h2 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #00AEEF;
+  margin-bottom: 1rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #111;
+  border: 1px solid #00AEEF;
+  padding: 1rem;
+  margin: 1rem;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00AEEF;
+}
+
+/* Projects Grid */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: #111;
+  border: 1px solid #00AEEF;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00AEEF;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-links a {
+  margin: 0 0.5rem;
+  color: #00FFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #00AEEF;
+}
+
+/* Resume & Contact */
+#resume a, #contact a {
+  color: #00FFFF;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+#resume a:hover, #contact a:hover {
+  color: #00AEEF;
 }
