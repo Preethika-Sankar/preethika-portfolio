@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
 
+          // highlight active nav link
           navLinks.forEach(link => {
             link.classList.remove("active");
             if (link.getAttribute("href").substring(1) === entry.target.id) {

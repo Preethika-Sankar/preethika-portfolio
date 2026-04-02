@@ -42,13 +42,19 @@ section {
   min-height: 100vh;
   padding: 4rem;
   text-align: center;
-  opacity: 0;
+  opacity: 0; /* hidden initially */
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
 
-section.visible,
+/* Home is visible right away */
 #home {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Any section marked visible by JS */
+section.visible {
   opacity: 1;
   transform: translateY(0);
 }
