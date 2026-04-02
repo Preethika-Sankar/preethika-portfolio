@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+
           navLinks.forEach(link => {
             link.classList.remove("active");
             if (link.getAttribute("href").substring(1) === entry.target.id) {
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.6 }
+    { threshold: 0.3 }
   );
 
   sections.forEach(section => observer.observe(section));

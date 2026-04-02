@@ -32,7 +32,6 @@ nav a:hover {
   color: #00AEEF;
 }
 
-/* Active navbar highlight */
 nav a.active {
   color: #00AEEF;
   border-bottom: 2px solid #00AEEF;
@@ -48,7 +47,8 @@ section {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-section.visible {
+section.visible,
+#home {
   opacity: 1;
   transform: translateY(0);
 }
@@ -72,7 +72,6 @@ h2 {
   box-shadow: 0 0 20px #00AEEF;
 }
 
-/* Hover reveal overlay for projects */
 .project-card::after {
   content: "Click to view details";
   position: absolute;
@@ -97,7 +96,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Hero section background gradient */
 #home {
   background: linear-gradient(135deg, #0A0A0A, #111, #0A0A0A);
   animation: gradientShift 8s infinite alternate;
@@ -108,7 +106,6 @@ h2 {
   100% { background: linear-gradient(135deg, #111, #0A0A0A); }
 }
 
-/* Hero text animation */
 .hero-text {
   font-size: 3rem;
   color: #00AEEF;
