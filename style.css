@@ -140,11 +140,18 @@ h2 {
   border-radius: 8px;
 }
 
+/* Hover effect only glow/scale, no overlay */
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #00AEEF;
 }
 
+/* Remove overlay completely: no ::after pseudo-element */
+.project-card::after {
+  content: none !important;
+}
+
+/* Project Links */
 .project-links a {
   margin: 0 0.5rem;
   color: #00FFFF;
@@ -155,6 +162,7 @@ h2 {
 .project-links a:hover {
   color: #00AEEF;
 }
+
 /* Resume & Contact */
 #resume a, #contact a {
   color: #00FFFF;
