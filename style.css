@@ -133,22 +133,16 @@ h2 {
 .project-card {
   background: #111;
   border: 1px solid #00AEEF;
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 1rem;
   width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  border-radius: 8px;
 }
 
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px #00AEEF;
-}
-
-.project-img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 .project-links a {
@@ -161,7 +155,6 @@ h2 {
 .project-links a:hover {
   color: #00AEEF;
 }
-
 /* Resume & Contact */
 #resume a, #contact a {
   color: #00FFFF;
